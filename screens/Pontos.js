@@ -6,25 +6,25 @@ const pontosTuristicos = [
     id: '1',
     nome: 'Castelo de Edimburgo',
     descricao: 'Uma fortaleza histórica que domina a silhueta da cidade de Edimburgo, a capital da Escócia.',
-    imagem: { uri: '../edim.jpeg' }
+    imagem: { uri: '../edim.jpg' }
   },
   {
     id: '2',
     nome: 'Castelo de Urquhart',
     descricao: 'Uma fortaleza em ruínas localizada às margens do Lago Ness, nas Terras Altas da Escócia.',
-    imagem: { uri: '' }
+    imagem: { uri: '../urq.jpg' }
   },
   {
     id: '3',
     nome: 'Ilha de Skye',
     descricao: 'Conhecida por suas paisagens acidentadas, vilas de pescadores pitorescas e castelos medievais.',
-    imagem: { uri: 'https://picsum.photos/seed/3/200/100' }
+    imagem: { uri: '../sky.jpg' }
   },
   {
     id: '4',
     nome: 'Palácio de Holyroodhouse',
     descricao: 'A residência oficial do monarca na Escócia, localizada no final da Royal Mile em Edimburgo.',
-    imagem: { uri: 'https://picsum.photos/seed/4/200/100' }
+    imagem: { uri: '../hol.jpg' }
   },
 ];
 
