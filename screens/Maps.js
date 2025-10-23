@@ -9,7 +9,7 @@ export default function App() {
       <Text style={styles.titulo}>Turismo no Alphínia Palace</Text>
 
       <MapView 
-        style={{ width: '80%', height: '60%'}} 
+        style={{ width: '90%', height: '70%'}} 
         region={{
           latitude: 57.3241503,
           longitude: -4.4421184,
