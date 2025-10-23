@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity, TextInput } from 'react-native';
 import styles from '../styles';
 import { useNavigation } from '@react-navigation/native';
-import { TextInput } from 'react-native-gesture-handler';
+
 
 export default function Login() {
   const navigation = useNavigation();
