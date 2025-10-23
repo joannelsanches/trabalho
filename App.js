@@ -1,4 +1,4 @@
-quais saão as cores em: import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesome6 } from '@react-native-vector-icons/fontawesome6';
