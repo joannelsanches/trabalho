@@ -1,89 +1,79 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+quais saão as cores em: import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { FontAwesome6 } from '@react-native-vector-icons/fontawesome6';
 
-import {FontAwesome6} from '@react-native-vector-icons/fontawesome6';
-
-import Home from   './screens/Home';
+import Home from './screens/Home';
 import Pontos from './screens/Pontos';
-import Sobre from  './screens/Sobre';
-import Maps from   './screens/Maps';
-import Login from  './screens/Login';
+import Sobre from './screens/Sobre';
+import Maps from './screens/Maps';
+import Login from './screens/Login';
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
-    
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={{
-          tabBarActiveTintColor : '#0079c9ff',        // Cor texto tab ativa
-          tabBarActiveBackgroundColor : '#bdbdbdff',  // Cor fundo tab ativa
-          tabBarInactiveTintColor: '#bdbdbdff',       // Cor texto tab Inativa
-          tabBarInactiveBackgroundColor: '#0079c9ff', // Cor fundo tab Inativa
-          headerStyle: { backgroundColor: '#0079c9ff' }, // Cor fundo cabecalho
-          headerTintColor: '#bdbdbdff',               // Cor texto do cabecalho
-          tabBarStyle: { backgroundColor: '#bdbdbdff' }, 
-          tabBarShowLabel: true ,                       // Remove o texto    
+          tabBarActiveTintColor: '#0d3b66',
+          tabBarActiveBackgroundColor: '#faf0ca',
+          tabBarInactiveTintColor: '#faf0ca',
+          tabBarInactiveBackgroundColor: '#0d3b66',
+          headerStyle: { backgroundColor: '#0d3b66' },
+          headerTintColor: '#faf0ca',
+          tabBarStyle: { backgroundColor: '#0d3b66' },
+          tabBarShowLabel: true,
         }}
       >
-
         <Tab.Screen 
-          name='Página Inicial' 
+          name="Página Inicial" 
           component={Home}
           options={{
-            tabBarIcon: ({focused}) => 
+            tabBarIcon: ({ focused }) => 
               <FontAwesome6 
-                name='house' 
+                name="house" 
                 size={20} 
-                iconStyle='solid' 
-                color={focused ? '#851f00ff' : '#bdbdbdff'}
+                color={focused ? '#f4a261' : '#faf0ca'} 
               />
           }}
         />
-        
         <Tab.Screen 
-          name='Pontos Turisticos'  
+          name="Pontos Turísticos" 
           component={Pontos}
           options={{
-            tabBarIcon: ({focused}) => 
+            tabBarIcon: ({ focused }) => 
               <FontAwesome6 
-                name='sliders' 
+                name="landmark" 
                 size={20} 
-                iconStyle='solid' 
-                color={focused ? '#851f00ff' : '#bdbdbdff'}
-              />
-          }}
-        />
-        <Tab.Screen
-          name='Maps'
-          component={Maps}
-          options={{
-            tabBarIcon: ({focused}) => 
-              <FontAwesome6 
-                name='map' 
-                size={20} 
-                iconStyle='solid' 
-                color={focused ? '#0079c9ff' : '#bdbdbdff'}
+                color={focused ? '#f4a261' : '#faf0ca'} 
               />
           }}
         />
         <Tab.Screen 
-          name='Sobre'          
-          component={Sobre}
+          name="Mapa Geral" 
+          component={Maps}
           options={{
-            tabBarIcon: ({focused}) => 
+            tabBarIcon: ({ focused }) => 
               <FontAwesome6 
-                name='circle-info' 
+                name="map" 
                 size={20} 
-                iconStyle='solid' 
-                color={focused ? '#0079c9ff' : '#bdbdbdff'}
+                color={focused ? '#f4a261' : '#faf0ca'} 
               />
           }}
         />
-
+        <Tab.Screen 
+          name="Sobre" 
+          component={Sobre}
+          options={{
+            tabBarIcon: ({ focused }) => 
+              <FontAwesome6 
+                name="circle-info" 
+                size={20} 
+                color={focused ? '#f4a261' : '#faf0ca'} 
+              />
+          }}
+        />
       </Tab.Navigator>
     </NavigationContainer>
   );
