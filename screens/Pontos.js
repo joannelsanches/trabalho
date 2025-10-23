@@ -6,13 +6,13 @@ const pontosTuristicos = [
     id: '1',
     nome: 'Castelo de Edimburgo',
     descricao: 'Uma fortaleza histórica que domina a silhueta da cidade de Edimburgo, a capital da Escócia.',
-    imagem: { uri: './edim.jpeg' }
+    imagem: { uri: '../edim.jpeg' }
   },
   {
     id: '2',
     nome: 'Castelo de Urquhart',
     descricao: 'Uma fortaleza em ruínas localizada às margens do Lago Ness, nas Terras Altas da Escócia.',
-    imagem: { uri: 'https://picsum.photos/seed/2/200/100' }
+    imagem: { uri: '' }
   },
   {
     id: '3',
