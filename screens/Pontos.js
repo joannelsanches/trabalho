@@ -41,12 +41,20 @@ const PontoItem = ({ nome, descricao, imagem }) => (
 export default function Pontos(){
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Visitas Turísticas oferecidas pelo {'\n'}                Alphínia Palace</Text>
+            <Text style={styles.titulo}>
+                Visitas Turísticas oferecidas pelo {'\n'} Alphínia Palace
+            </Text>
             <FlatList 
-                style={{width: '100%'}}
+                style={{ width: '100%' }}
                 data={pontosTuristicos} 
                 renderItem={({item}) => <PontoItem {...item} />} 
-                keyExtractor={item => item.id} />
+                keyExtractor={item => item.id}
+                contentContainerStyle={{
+                    paddingVertical: 20, 
+                    paddingHorizontal: 15, 
+                    gap: 15 // espaço entre os itens (React Native >= 0.71)
+                }}
+            />
         </View>
     );
 }
