@@ -6,7 +6,7 @@ const pontosTuristicos = [
     id: '1',
     nome: 'Castelo de Edimburgo',
     descricao: 'Uma fortaleza histórica que domina a silhueta da cidade de Edimburgo, a capital da Escócia.',
-    imagem: { uri: 'https://picsum.photos/seed/1/200/100' }
+    imagem: { uri: './edim.jpeg' }
   },
   {
     id: '2',
