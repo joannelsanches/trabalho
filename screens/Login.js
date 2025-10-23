@@ -4,20 +4,24 @@ import { useNavigation } from '@react-navigation/native';
 
 
 export default function Login() {
-  const navigation = useNavigation();
+    const navigation = useNavigation();
 
-  return (
-    <View style={styles.container}>
-      <Text style={styles.titulo}>LOGIN</Text>
-      <TextInput placeholder="Email" style={styles.input} />
-      <TextInput placeholder="Senha" style={styles.input} secureTextEntry />
+    return (
+        <View style={styles.container}>
+            <Text style={styles.titulo}>LOGIN</Text>
+            <TextInput placeholder="Email" style={styles.input} />
+            <TextInput
+                placeholder="Senha"
+                style={styles.input}
+                secureTextEntry
+            />
 
-      <TouchableOpacity 
-        style={styles.botao}
-        onPress={() => navigation.navigate('Página Inicial')}
-      >
-        <Text style={styles.botaoTexto}>ENTRAR</Text>
-      </TouchableOpacity>
-    </View>
-  );
+            <TouchableOpacity
+                style={styles.botao}
+                onPress={() => navigation.navigate("Página Inicial")}
+            >
+                <Text style={styles.botaoTexto}>ENTRAR</Text>
+            </TouchableOpacity>
+        </View>
+    );
 }

@@ -16,16 +16,25 @@ export default function App() {
     <NavigationContainer>
       <Tab.Navigator
         screenOptions={{
-          tabBarActiveTintColor: '#0d3b66',
+          tabBarActiveTintColor: '#572002',
           tabBarActiveBackgroundColor: '#faf0ca',
           tabBarInactiveTintColor: '#faf0ca',
-          tabBarInactiveBackgroundColor: '#0d3b66',
-          headerStyle: { backgroundColor: '#0d3b66' },
+          tabBarInactiveBackgroundColor: '#572002',
+          headerStyle: { backgroundColor: '#572002' },
           headerTintColor: '#faf0ca',
-          tabBarStyle: { backgroundColor: '#0d3b66' },
+          tabBarStyle: { backgroundColor: '#572002' },
           tabBarShowLabel: true,
         }}
       >
+        <Tab.Screen 
+          name='Login'          
+          component={Login} 
+          options={{ 
+            tabBarShowLabel: false,
+            tabBarItemStyle: { display: 'none' }
+          }}
+        />
+
         <Tab.Screen 
           name="Página Inicial" 
           component={Home}
@@ -34,6 +43,7 @@ export default function App() {
               <FontAwesome6 
                 name="house" 
                 size={20} 
+                iconStyle='solid'
                 color={focused ? '#f4a261' : '#faf0ca'} 
               />
           }}
@@ -46,6 +56,7 @@ export default function App() {
               <FontAwesome6 
                 name="landmark" 
                 size={20} 
+                iconStyle='solid'
                 color={focused ? '#f4a261' : '#faf0ca'} 
               />
           }}
@@ -58,6 +69,7 @@ export default function App() {
               <FontAwesome6 
                 name="map" 
                 size={20} 
+                iconStyle='solid'
                 color={focused ? '#f4a261' : '#faf0ca'} 
               />
           }}
@@ -70,6 +82,7 @@ export default function App() {
               <FontAwesome6 
                 name="circle-info" 
                 size={20} 
+                iconStyle='solid'
                 color={focused ? '#f4a261' : '#faf0ca'} 
               />
           }}
