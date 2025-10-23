@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff6f0', // fundo suave e quente
+    backgroundColor: '#fff6f0', 
     alignItems: 'center',
     justifyContent: 'center',
     paddingTop: 40,
@@ -12,7 +12,7 @@ export default StyleSheet.create({
   titulo: {
     fontSize: 26,
     fontWeight: '700',
-    color: '#6b2e00', // marrom queimado inspirado no caule da folha
+    color: '#6b2e00',
     marginBottom: 20,
     textAlign: 'center',
     fontFamily: 'serif',
@@ -20,14 +20,14 @@ export default StyleSheet.create({
 
   texto: {
     fontSize: 16,
-    color: '#8b4513', // tom terroso elegante
+    color: '#8b4513',
     textAlign: 'center',
     marginBottom: 15,
     lineHeight: 22,
   },
 
   botao: {
-    backgroundColor: '#c45c00', // laranja queimado (inspirado nas bordas da folha)
+    backgroundColor: '#c45c00',
     borderColor: '#8b3500',
     borderWidth: 2,
     borderRadius: 12,
@@ -51,7 +51,7 @@ export default StyleSheet.create({
   input: {
     padding: 12,
     width: '80%',
-    backgroundColor: '#f8e8dd', // bege rosado inspirado no fundo do logo
+    backgroundColor: '#f8e8dd',
     borderColor: '#a0522d',
     borderWidth: 1,
     marginBottom: 20,
@@ -59,7 +59,7 @@ export default StyleSheet.create({
     color: '#5a2a00',
   },
 
-  // Estilos para listas ou cards
+  
   itemContainer: {
     flexDirection: 'row',
     backgroundColor: '#fffdf9',
